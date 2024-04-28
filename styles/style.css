@@ -1,0 +1,78 @@
+body {background-image: url("../images/space.jpg");
+ background-size: cover;}
+
+
+.sky{
+transform: rotate(90deg);
+animation-name: fly;
+animation-duration: 9s;
+  animation-iteration-count: infinite;
+  position: relative;
+   translate: 550px;
+	transform: rotate(0deg);
+	transition-duration: 15s;
+	transform: rotate(90deg) ;
+}
+
+
+ @keyframes fly {
+ 	from {left: -800px; }
+ 	to {left: 1500px; }
+ 	from {top:0px}
+ 	to {top: -250px}
+ }
+
+
+
+ .uf {width: 400px;
+ 	height: 120px;
+  animation-iteration-count: infinite;
+  animation-name: wow;
+  animation-duration: 9s;
+position: relative;
+ }
+
+ @keyframes wow {
+0%  {left: 100px;}
+25%  {top: 0px; left: 1300px}
+50%  {top: 500px;}
+75%  {left: 100px;}
+100% {top: 0px; left: 100px}
+}
+
+ 
+ .ast {
+ 	width: 100px;
+ 	height: 120px;
+ 	position: relative;
+ 	top: 550px;
+ left: -700px;
+ animation-name: test;
+ animation-duration: 6s;
+ animation-iteration-count: infinite;
+ aniamtion: rotate 2s linear infinite;
+ animation-timing-function:ease;
+ }
+
+@keyframes test {
+    from { left: -600px;
+        transform: rotate(0deg);
+    }
+    to { left: 1900px;
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
