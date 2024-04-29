@@ -1,4 +1,4 @@
-body {background-image: url("../images/space.jpg");
+.space {background-image: url("../images/space.jpg");
  background-size: cover;}
 
 
@@ -15,13 +15,11 @@ animation-duration: 9s;
 }
 
 
- @keyframes fly {
- 	from {left: -800px; }
- 	to {left: 1500px; }
- 	from {top:0px}
- 	to {top: -250px}
- }
+@keyframes fly {
+0% {left: -800px; top: 0px}
+100%{left: 1500px; top: -250px; rotate: -17deg;}
 
+}
 
 
  .uf {width: 400px;
@@ -33,9 +31,9 @@ position: relative;
  }
 
  @keyframes wow {
-0%  {left: 100px;}
-25%  {top: 0px; left: 1300px}
-50%  {top: 500px;}
+0%  {left: 100px; }
+25%  {top: 0px; left: 1300px; rotate: 10deg}
+50%  {top: 500px; rotate: -8deg}
 75%  {left: 100px;}
 100% {top: 0px; left: 100px}
 }
@@ -48,23 +46,73 @@ position: relative;
  	top: 550px;
  left: -700px;
  animation-name: test;
- animation-duration: 6s;
+ animation-duration: 9s;
  animation-iteration-count: infinite;
- aniamtion: rotate 2s linear infinite;
+ aniamtion: rotate 2s linear;
  animation-timing-function:ease;
  }
 
-@keyframes test {
-    from { left: -600px;
-        transform: rotate(0deg);
-    }
-    to { left: 1900px;
-        transform: rotate(360deg);
-    }
+
+ @keyframes test {
+0% {left: -600px;}
+100% {left: 1500px; rotate: 360deg}
+
+
+ }
+
+
+.earth {background-image:url(../images/park.png) ;
+background-size: cover;
 }
 
 
+.ear {
+	position: relative;
+	display:inline;
+color: antiquewhite;
+margin-left: 560px;
+top: -165px;
+}
 
+
+.plane {
+height: 90px;
+position: relative;
+top: 0px;
+left: -170px;
+animation-name: hi;
+animation-duration: 11s;
+animation-iteration-count: infinite;
+}
+
+
+@keyframes hi {
+ 0% {left: -100px;top:0px; rotate: 20deg;}
+ 30% {top: 300px; rotate: 0deg;}
+ 35% {;top: 300px; rotate: 0deg;}
+ 50% {rotate: -20deg;}
+ 75% {top: 0px; rotate: -7deg;}
+ 77% {rotate: -3deg}
+ 80% {rotate: 0deg;}
+ 100% {left: 100%;}
+}
+
+.car {height: 140px;}
+
+.is {
+position: relative;
+display: inline;
+top: 800px;
+left: -400px;
+animation-name: move;
+animation-duration: 9s;
+animation-iteration-count: infinite;
+}
+
+@keyframes move {
+0% {left: -400px;}
+100% {left: 100%}
+}
 
 
 
